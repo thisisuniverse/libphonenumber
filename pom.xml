@@ -18,6 +18,14 @@
     </license>
   </licenses>
 
+  <distributionManagement>
+        <repository>
+            <id>web-maven</id>
+            <name>Web Maven</name>
+            <url>file:///var/www/maven</url>
+        </repository>
+    </distributionManagement>
+
   <modules>
     <module>tools/java</module>
     <module>java</module>
