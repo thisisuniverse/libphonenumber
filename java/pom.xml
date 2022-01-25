@@ -24,6 +24,7 @@
   </organization>
 
   <licenses>
+
     <license>
       <name>The Apache Software License, Version 2.0</name>
       <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
@@ -44,6 +45,7 @@
     <url>https://github.com/google/libphonenumber/</url>
     <tag>v8.12.41</tag>
   </scm>
+
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -93,6 +95,7 @@
     <module>geocoder</module>
     <module>demo</module>
   </modules>
+
 
   <build>
     <pluginManagement>
@@ -174,17 +177,6 @@
 	  <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
-      <plugin>
-        <groupId>org.sonatype.plugins</groupId>
-        <artifactId>nexus-staging-maven-plugin</artifactId>
-        <extensions>true</extensions>
-        <configuration>
-          <serverId>sonatype-nexus-staging</serverId>
-          <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-          <stagingProfileId>23ed8fbc71e875</stagingProfileId>
-	  <skipStagingRepositoryClose>true</skipStagingRepositoryClose>
-        </configuration>
-      </plugin>
     </plugins>
   </build>
 
@@ -196,6 +188,7 @@
           <name>performRelease</name>
           <value>true</value>
         </property>
+
       </activation>
       <build>
         <plugins>
